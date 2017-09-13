@@ -173,17 +173,6 @@ body {
     width: 95%;
     margin: 0 auto;
     transition: all .8s; }
-    .butters-extracts-wrap .indica-sativa-wrap .indica-hidden-text {
-      position: relative;
-      top: -160px;
-      padding-bottom: 50%;
-      width: 80%;
-      margin: 0 auto;
-      line-height: 2;
-      text-align: center;
-      display: none; }
-      .butters-extracts-wrap .indica-sativa-wrap .indica-hidden-text:active {
-        display: block; }
     .butters-extracts-wrap .indica-sativa-wrap .indica-image {
       background-image: url(../../assets/img/purple-leaf.png);
       background-repeat: no-repeat;
@@ -335,5 +324,46 @@ body {
       margin-top: 3%;
       transform: rotate(270deg);
       margin-bottom: 12%; }
+
+@media screen and (min-width: 960px) {
+  .hero-wrap {
+    background-size: 159%; }
+    .hero-wrap nav .leaf-nav, .hero-wrap nav .cart {
+      width: 10%; }
+    .hero-wrap .hero-logo {
+      padding-bottom: 7%; }
+    .hero-wrap .welcome {
+      margin-top: 1%; }
+    .hero-wrap .underline-white {
+      width: 39%;
+      padding-bottom: 17%; }
+    .hero-wrap .welcome-text {
+      width: 47%;
+      margin: 0 auto;
+      margin-bottom: 10%;
+      font-size: 2rem; }
+    .hero-wrap .bakery-text {
+      width: 44%;
+      font-size: 2rem; }
+    .hero-wrap .arrow-wrap .down-arrow-img {
+      width: 4%;
+      margin-top: 2%; }
+  .desserts-wrap .desserts-title {
+    padding-top: 10%; }
+  .desserts-wrap .underline-white {
+    width: 38%;
+    padding-bottom: 17%; }
+  .desserts-wrap .dessert-grid {
+    flex-wrap: nowrap;
+    justify-content: space-evenly; }
+    .desserts-wrap .dessert-grid .title {
+      width: none;
+      bottom: none;
+      padding-bottom: 0; }
+    .desserts-wrap .dessert-grid .grid-image {
+      background-size: contain;
+      width: 23%;
+      height: 40%;
+      padding-bottom: 42%; } }
 
 /*# sourceMappingURL=main.css.map */

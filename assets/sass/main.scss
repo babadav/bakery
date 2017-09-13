@@ -281,20 +281,20 @@ body{
     	margin: 0 auto;
     	transition: all .8s;
 
-    	 .indica-hidden-text{
-				position: relative;
-			    top: -160px;
-			    padding-bottom: 50%;
-			    width: 80%;
-			    margin: 0 auto;
-			    line-height: 2;
-			    text-align: center;
-			    display: none;
+   //  	 .indica-hidden-text{
+			// 	position: relative;
+			//     top: -160px;
+			//     padding-bottom: 50%;
+			//     width: 80%;
+			//     margin: 0 auto;
+			//     line-height: 2;
+			//     text-align: center;
+			//     display: none;
 
-			    &:active{
-			    	display: block;
-			    }
-			}
+			//     &:active{
+			//     	display: block;
+			//     }
+			// }
 
     	
 	
@@ -540,7 +540,87 @@ body{
 
 
 
+@media screen and (min-width: 960px){
+	.hero-wrap{
+		background-size: 159%;
 
+		nav{
+			.leaf-nav , .cart{
+				width: 10%;
+			}
+		}
+
+
+		.hero-logo{
+			padding-bottom: 7%;
+		}
+
+
+		.welcome{
+			margin-top: 1%;
+		}
+
+		.underline-white{
+			width: 39%;
+			padding-bottom: 17%;
+		}
+
+		.welcome-text{
+			width: 47%;
+		    margin: 0 auto;
+		    margin-bottom: 10%;
+		    font-size: 2rem;
+
+		}
+
+		.bakery-text{
+			width: 44%;
+			font-size: 2rem;
+		}
+
+		.arrow-wrap{
+			.down-arrow-img{
+				width: 4%;
+   			 	margin-top: 2%;
+
+			}
+		}
+	}
+
+	// end hero-wrap************************
+
+	.desserts-wrap{
+		.desserts-title{
+			padding-top: 10%;
+		}
+
+		.underline-white{
+			width: 38%;
+			padding-bottom: 17%;
+		}
+
+		.dessert-grid{
+			flex-wrap: nowrap;
+			justify-content: space-evenly;
+
+			.title{
+			
+				width: none;
+				bottom: none;
+				padding-bottom: 0;
+			}
+
+			.grid-image{
+				background-size: contain;
+    			width: 23%;
+    			height: 40%;
+    			padding-bottom: 42%;
+			}
+		}
+	}
+
+
+}
 
 
 
