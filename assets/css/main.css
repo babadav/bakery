@@ -7,6 +7,11 @@ body {
   background-size: 293%;
   background-position: -10px center;
   background-repeat: no-repeat; }
+  .hero-wrap .desktop-nav {
+    display: none; }
+    .hero-wrap .desktop-nav p {
+      color: white;
+      text-align: center; }
   .hero-wrap nav {
     display: flex;
     justify-content: space-between; }
@@ -120,7 +125,9 @@ body {
       width: 48%;
       margin: 0 auto;
       background-size: cover;
-      margin-bottom: 2%; }
+      margin-bottom: 2%;
+      height: 0;
+      padding-bottom: 90%; }
     .desserts-wrap .dessert-grid .cakes-cupcakes {
       background-image: url(../../assets/img/cake-link.png);
       background-repeat: no-repeat;
@@ -173,6 +180,18 @@ body {
     width: 95%;
     margin: 0 auto;
     transition: all .8s; }
+    .butters-extracts-wrap .indica-sativa-wrap .indica-hidden-text {
+      position: relative;
+      top: -160px;
+      padding-bottom: 50%;
+      width: 80%;
+      margin: 0 auto;
+      line-height: 2;
+      text-align: center;
+      display: none;
+      transition: all .8s; }
+      .butters-extracts-wrap .indica-sativa-wrap .indica-hidden-text .active {
+        display: block; }
     .butters-extracts-wrap .indica-sativa-wrap .indica-image {
       background-image: url(../../assets/img/purple-leaf.png);
       background-repeat: no-repeat;
@@ -188,7 +207,7 @@ body {
         height: 50%;
         background-color: RGBA(35, 16, 65, 0.8);
         transition: all 1s; }
-        .butters-extracts-wrap .indica-sativa-wrap .indica-image .indica-description:active {
+        .butters-extracts-wrap .indica-sativa-wrap .indica-image .indica-description .active {
           padding-bottom: 50%; }
         .butters-extracts-wrap .indica-sativa-wrap .indica-image .indica-description .white-arrow-down {
           width: 23%;
@@ -325,29 +344,83 @@ body {
       transform: rotate(270deg);
       margin-bottom: 12%; }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
+  .hero-wrap .underline-white {
+    padding-bottom: 20%; }
+  .hero-wrap .welcome-text {
+    width: 49%;
+    margin-left: 25%; }
+  .desserts-wrap .underline-white {
+    padding-bottom: 21%; }
+  .desserts-wrap .dessert-grid .grid-image {
+    width: 24%;
+    padding-bottom: 52%;
+    height: 0; }
+  .butters-extracts-wrap .butters-extracts-description {
+    width: 74%;
+    font-size: 2rem;
+    margin-left: 13%;
+    margin-bottom: 10%; }
+  .butters-extracts-wrap .butters-extracts-wrap-title {
+    font-size: 7rem; }
+  .butters-extracts-wrap .marijuana-benefits {
+    padding-bottom: 0;
+    margin-bottom: -10%; }
+  .butters-extracts-wrap .indica-sativa-wrap .indica-image {
+    padding-bottom: 70%;
+    margin-right: 2%; }
+  .butters-extracts-wrap .indica-sativa-wrap .sativa-image {
+    padding-bottom: 70%; } }
+
+@media screen and (min-width: 1024px) {
   .hero-wrap {
     background-size: 159%; }
-    .hero-wrap nav .leaf-nav, .hero-wrap nav .cart {
-      width: 10%; }
+    .hero-wrap .hero-logo {
+      display: none; }
+    .hero-wrap .desktop-nav {
+      visibility: visible;
+      width: 100%;
+      background-color: RGBA(15, 9, 17, 1);
+      display: flex;
+      justify-content: space-between;
+      opacity: .8; }
+      .hero-wrap .desktop-nav .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none; }
+        .hero-wrap .desktop-nav .nav-links a {
+          color: RGBA(242, 222, 219, 1);
+          text-decoration: none;
+          list-style-type: none;
+          font-size: 1.5rem; }
+    .hero-wrap nav {
+      display: none; }
+      .hero-wrap nav .leaf-nav, .hero-wrap nav .cart {
+        width: 10%; }
     .hero-wrap .hero-logo {
       padding-bottom: 7%; }
     .hero-wrap .welcome {
-      margin-top: 1%; }
+      margin-top: 10%; }
     .hero-wrap .underline-white {
-      width: 39%;
-      padding-bottom: 17%; }
+      width: 20%;
+      padding-bottom: 10%; }
     .hero-wrap .welcome-text {
-      width: 47%;
+      width: 23%;
       margin: 0 auto;
       margin-bottom: 10%;
-      font-size: 2rem; }
+      font-size: 1.9rem; }
     .hero-wrap .bakery-text {
       width: 44%;
       font-size: 2rem; }
-    .hero-wrap .arrow-wrap .down-arrow-img {
-      width: 4%;
-      margin-top: 2%; }
+    .hero-wrap .arrow-wrap {
+      margin-top: 10%; }
+      .hero-wrap .arrow-wrap .down-arrow-img {
+        width: 4%;
+        margin-top: 2%; }
+      .hero-wrap .arrow-wrap .dig-in {
+        font-size: 2.2rem; }
   .desserts-wrap .desserts-title {
     padding-top: 10%; }
   .desserts-wrap .underline-white {

@@ -2,11 +2,11 @@ console.log("script.js");
 
 
 
-// $('.indica-description').on('click', function(){
-// 	$('.indica-description').toggleClass('.active');
-// 	$('.indica-hidden-text').toggleClass('.active');
+$('.indica-image').on('click', function(){
+	$('.indica-description').toggleClass('active');
+	$('.indica-hidden-text').toggleClass('active');
 
-// });
+});
 
 
 
