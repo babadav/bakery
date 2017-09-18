@@ -1,6 +1,9 @@
 body {
   font-family: "calluna-sans"; }
 
+.clearfix {
+  clear: both; }
+
 .hero-wrap {
   background-image: url(../../assets/img/cupcake-photo.png);
   padding-bottom: 8vh;
@@ -130,22 +133,30 @@ body {
       height: 0;
       padding-bottom: 90%; }
     .desserts-wrap .dessert-grid .cakes-cupcakes {
+      display: flex;
+      justify-content: center;
       background-image: url(../../assets/img/cake-link.png);
       background-repeat: no-repeat;
       padding-bottom: 108%; }
       .desserts-wrap .dessert-grid .cakes-cupcakes p {
         width: 95%; }
     .desserts-wrap .dessert-grid .donuts-pastries {
+      display: flex;
+      justify-content: center;
       background-image: url(../../assets/img/donut-link.png);
       background-repeat: no-repeat;
       padding-bottom: 108%; }
       .desserts-wrap .dessert-grid .donuts-pastries p {
         width: 95%; }
     .desserts-wrap .dessert-grid .ice-cream-shakes {
+      display: flex;
+      justify-content: center;
       background-image: url(../../assets/img/ice-cream-link.png);
       background-repeat: no-repeat;
       padding-bottom: 108%; }
     .desserts-wrap .dessert-grid .choclates-fruits {
+      display: flex;
+      justify-content: center;
       background-image: url(../../assets/img/chocolate-link.png);
       background-repeat: no-repeat;
       padding-bottom: 108%; }
@@ -182,25 +193,26 @@ body {
     margin: 0 auto; }
     .butters-extracts-wrap .indica-sativa-wrap .indica-hidden-text {
       position: relative;
-      top: -160px;
-      padding-bottom: 10%;
       width: 80%;
       margin: 0 auto;
       line-height: 2;
       text-align: center;
       font-size: 1.3rem;
+      transition: all .8s;
       opacity: 0;
       height: 0;
-      transition: all .8s; }
-    .butters-extracts-wrap .indica-sativa-wrap .indica-active {
-      opacity: 1;
-      height: 420px; }
+      padding-bottom: 0%; }
+      .butters-extracts-wrap .indica-sativa-wrap .indica-hidden-text.indica-active {
+        opacity: 1;
+        height: 420px;
+        margin-top: 12%; }
     .butters-extracts-wrap .indica-sativa-wrap .indica-image {
       background-image: url(../../assets/img/purple-leaf.png);
       background-repeat: no-repeat;
-      padding-bottom: 100%;
+      padding-bottom: 50%;
       background-size: contain;
-      transition: all 2s; }
+      transition: all 2s;
+      margin-bottom: 5%; }
       .butters-extracts-wrap .indica-sativa-wrap .indica-image .indica-description {
         display: flex;
         justify-content: center;
@@ -244,27 +256,24 @@ body {
         width: 100%; }
     .butters-extracts-wrap .indica-sativa-wrap .sativa-hidden-text {
       position: relative;
-      top: -14px;
-      padding-bottom: 14%;
       width: 80%;
       margin: 0 auto;
       line-height: 2;
       text-align: center;
       font-size: 1.3rem;
+      transition: all .8s;
       opacity: 0;
       height: 0;
-      transition: all .8s; }
-    .butters-extracts-wrap .indica-sativa-wrap .sativa-active {
-      opacity: 1;
-      height: 420px; }
+      padding-bottom: 0%; }
+      .butters-extracts-wrap .indica-sativa-wrap .sativa-hidden-text.sativa-active {
+        opacity: 1;
+        height: 420px;
+        margin-top: 12%; }
     .butters-extracts-wrap .indica-sativa-wrap .sativa-image {
       background-image: url(../../assets/img/green-leaf.png);
       background-repeat: no-repeat;
-      background-repeat: no-repeat;
-      padding-bottom: 100%;
-      background-size: contain;
-      margin-top: -40%;
-      margin-bottom: -40%; }
+      padding-bottom: 50%;
+      background-size: contain; }
       .butters-extracts-wrap .indica-sativa-wrap .sativa-image .sativa-description {
         display: flex;
         justify-content: center;
@@ -303,14 +312,14 @@ body {
         width: 100%; }
   .butters-extracts-wrap .marijuana-benefits {
     color: black;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
     font-size: 1.4rem;
     line-height: 2;
     position: relative;
-    padding-bottom: 30%;
-    margin-bottom: -20%; }
+    text-align: center;
+    margin-top: 10%; }
   .butters-extracts-wrap .arrow-wrap {
     display: flex;
     flex-direction: column;
@@ -349,19 +358,19 @@ body {
     justify-content: space-around; }
     .custom-orders-wrap .custom-icons-wrap .bowl-icon {
       background-image: url(../../assets/img/bowl-vector.svg);
-      width: 33%;
+      width: 25%;
       padding-bottom: 36%;
       background-size: contain;
       background-repeat: no-repeat; }
     .custom-orders-wrap .custom-icons-wrap .thermo-icon {
       background-image: url(../../assets/img/thermometer.svg);
-      width: 33%;
+      width: 25%;
       padding-bottom: 36%;
       background-size: contain;
       background-repeat: no-repeat; }
     .custom-orders-wrap .custom-icons-wrap .leaf-icon {
       background-image: url(../../assets/img/weed-vector-white.svg);
-      width: 33%;
+      width: 22%;
       padding-bottom: 36%;
       background-size: contain;
       background-repeat: no-repeat; }
@@ -398,9 +407,14 @@ body {
     width: 40%;
     padding-bottom: 21%; }
   .desserts-wrap .dessert-grid .grid-image {
+    display: flex;
+    justify-content: center;
     width: 24%;
     padding-bottom: 52%;
     height: 0; }
+    .desserts-wrap .dessert-grid .grid-image p {
+      width: 77%;
+      padding-left: 7%; }
   .butters-extracts-wrap .butters-extracts-description {
     width: 74%;
     font-size: 2rem;
@@ -418,8 +432,8 @@ body {
     margin-bottom: -10%;
     margin-top: 13%; }
   .butters-extracts-wrap .indica-sativa-wrap .indica-image {
-    padding-bottom: 60%;
-    margin-bottom: 30%; }
+    padding-bottom: 50%;
+    margin-bottom: 5%; }
     .butters-extracts-wrap .indica-sativa-wrap .indica-image .indica-description {
       width: 50%; }
       .butters-extracts-wrap .indica-sativa-wrap .indica-image .indica-description p {
@@ -436,8 +450,7 @@ body {
         left: 89%;
         top: 3%; }
   .butters-extracts-wrap .indica-sativa-wrap .sativa-image {
-    padding-bottom: 60%;
-    margin-bottom: -15%; }
+    padding-bottom: 50%; }
     .butters-extracts-wrap .indica-sativa-wrap .sativa-image .sativa-description {
       width: 50%; }
       .butters-extracts-wrap .indica-sativa-wrap .sativa-image .sativa-description p {
@@ -448,10 +461,8 @@ body {
         width: 8%;
         padding-bottom: 8%; }
   .butters-extracts-wrap .indica-sativa-wrap .sativa-hidden-text {
-    top: 95px;
     padding-bottom: 0; }
   .butters-extracts-wrap .indica-sativa-wrap .indica-active {
-    top: -220px;
     padding-bottom: 0;
     width: 64%; } }
 
@@ -461,14 +472,12 @@ body {
     .hero-wrap .hero-logo {
       display: none; }
     .hero-wrap .desktop-nav {
-      visibility: visible;
-      padding-bottom: 3%;
-      padding-top: 3%;
       width: 100%;
       background-color: RGBA(15, 9, 17, 1);
       display: flex;
       justify-content: space-between;
-      opacity: .8; }
+      opacity: .8;
+      transition: all .8s; }
       .hero-wrap .desktop-nav .nav-links {
         width: 100%;
         display: flex;
@@ -483,7 +492,9 @@ body {
           list-style-type: none;
           font-size: 1.8rem;
           font-family: "calluna-sans";
-          width: 9%; }
+          width: 14%; }
+          .hero-wrap .desktop-nav .nav-links a:hover {
+            color: white; }
     .hero-wrap nav {
       display: none; }
       .hero-wrap nav .leaf-nav, .hero-wrap nav .cart {
@@ -532,29 +543,33 @@ body {
   .butters-extracts-wrap .butters-extracts-description {
     margin-bottom: 0; }
   .butters-extracts-wrap .indica-sativa-wrap {
-    margin-top: 20%; }
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .butters-extracts-wrap .indica-sativa-wrap .indica-hidden-text {
-      height: inherit; }
+      height: 0;
+      order: 2; }
     .butters-extracts-wrap .indica-sativa-wrap .indica-active {
-      top: -640px;
       margin-bottom: 2%;
       width: 44%; }
-    .butters-extracts-wrap .indica-sativa-wrap .indica-image {
-      width: 40%;
-      padding-bottom: 50%;
-      margin-bottom: 10%;
-      position: relative;
-      float: left;
-      margin-right: 2%; }
-      .butters-extracts-wrap .indica-sativa-wrap .indica-image .indica-description {
-        width: 50%; }
+    .butters-extracts-wrap .indica-sativa-wrap .indica-image,
     .butters-extracts-wrap .indica-sativa-wrap .sativa-image {
-      padding-bottom: 25%;
-      width: 40%;
-      position: relative;
-      float: left; }
+      order: 1;
+      min-width: 45%;
+      padding-bottom: 20%;
+      position: relative; }
+      .butters-extracts-wrap .indica-sativa-wrap .indica-image .indica-description,
+      .butters-extracts-wrap .indica-sativa-wrap .indica-image .sativa-description,
+      .butters-extracts-wrap .indica-sativa-wrap .sativa-image .indica-description,
       .butters-extracts-wrap .indica-sativa-wrap .sativa-image .sativa-description {
         width: 50%; }
+    .butters-extracts-wrap .indica-sativa-wrap .indica-image {
+      padding-bottom: 23%; }
+    .butters-extracts-wrap .indica-sativa-wrap .sativa-hidden-text {
+      order: 2; }
+  .butters-extracts-wrap .marijuana-benefits {
+    margin-top: 1%; }
   .custom-orders-wrap {
     text-align: center;
     margin-left: 0; }
@@ -577,9 +592,7 @@ body {
       margin: 0 auto; } }
 
 @media screen and (min-width: 1280px) {
-  .butters-extracts-wrap .butters-extracts-description {
-    margin-bottom: 25%; }
-  .butters-extracts-wrap .indica-sativa-wrap .indica-active {
-    top: -650px; } }
+  .butters-extracts-wrap .marijuana-benefits {
+    width: 49%; } }
 
 /*# sourceMappingURL=main.css.map */
