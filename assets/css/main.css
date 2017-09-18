@@ -348,20 +348,20 @@ body {
     display: flex;
     justify-content: space-around; }
     .custom-orders-wrap .custom-icons-wrap .bowl-icon {
-      background-image: url(../../assets/img/create-assets/cart-bowl.svg);
-      width: 25%;
+      background-image: url(../../assets/img/bowl-vector.svg);
+      width: 33%;
       padding-bottom: 36%;
       background-size: contain;
       background-repeat: no-repeat; }
     .custom-orders-wrap .custom-icons-wrap .thermo-icon {
-      background-image: url(../../assets/img/weed-vector-black.png);
-      width: 25%;
+      background-image: url(../../assets/img/thermometer.svg);
+      width: 33%;
       padding-bottom: 36%;
       background-size: contain;
       background-repeat: no-repeat; }
     .custom-orders-wrap .custom-icons-wrap .leaf-icon {
-      background-image: url(../../assets/img/weed-vector-black.png);
-      width: 25%;
+      background-image: url(../../assets/img/weed-vector-white.svg);
+      width: 33%;
       padding-bottom: 36%;
       background-size: contain;
       background-repeat: no-repeat; }
